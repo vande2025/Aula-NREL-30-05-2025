@@ -75,13 +75,133 @@
             </div>
 
             <!-- card da sonserina -->
+            <div class="casa-container" id="sonserina"></div>
+            <img src="./assets/Imagens/logo_sonserina.png alt=" sonserina" class="casa-imagem">
+            <h3>sonserina </h3>
+            <p>destaca ambição,astucia e liderança</p>
+
         </div>
         <!-- card da corvinal -->
-        </div>
-        <!-- card da lufa- -->
-        </div>
 
+        img src ="./assets/imagens/logo-corvinal.png" alt="lufa lufa" class="casa-imagem">
+        <H3>CORNOVIL </H3>
+
+        <P>DESTACA LEALDADE,PACIENCIA E HONESTIDADE</P>
+        </div>
     </section>
+    <!-- SEÇÃO SOBRE OS ESTUDANTES DE HOGWARTS-->
+
+    <section class="estudantes " id="estudantes">
+        <h2 class="estudante-titulo">
+            QUEM SÃO OS ESTUDANTES DE HOGWARTS
+        </h2>
+        <div class="estudante-todos">
+            <!-- container do harry potter -->
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./assets//Imagens//harry_potter_alterado_oficial.png"
+                    alt="harry potter" data-gif="gif_harry.gif">
+
+                <h3 class="estudante-nome"> HARRY POTTER</h3>
+                <img class="estudante-casa" src="./assets/Imagens//logo-griforina.png alt=" grifinória.png"
+                    alt="grifinória">
+
+                <div class="gif-card">
+                    <img class="gif-imagem" src="./assets/Gifs/gif_harry.gif" alt="gif do potter">
+
+                </div>
+
+            </div>
+
+            <!-- container do cedrico -->
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./assets//Imagens/cedric _diggory_novo_6.png" alt="cedrico diggory"
+                    data-gif="gif_cedric.gif">
+                <h3 class="estudante-nome"> cedrico diggory</h3>
+                <img class="estudante-casa" src="./assets/Imagens//logo-lufa-lufa.png" alt="lufa-lufa">
+
+
+                <div class="gif-card">
+                    <img class="gif-imagem" src="./assets/Gifs/gif_cedric.gif" alt="gif do cedrico">
+
+                </div>
+
+            </div>
+            <!-- container do draco malfoy -->
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./assets//Imagens/draco-malfoy_alterado.png" alt="draco malfoy"
+                    data-gif="gif_draco.gif">
+
+                <h3 class="estudante-nome"> draco malfoy</h3>
+                <img class="estudante-casa" src="./assets/Imagens/logo_sonserina.png"> alt=" sonserina.png">
+
+
+                <div class="gif-card">
+                    <img class="gif-imagem" src="./assets/Gifs/gif_draco.gif" alt="gif do draco">
+
+                </div>
+
+            </div>
+            <!-- container do aluna lovegood -->
+            <div class="estudante-container">
+                <img class="imagem-estudante" src="./assets/Imagens/foto_luna_alterada.png" alt="luna lovegood"
+                    data-gif="gif_luna.gif">
+
+                <h3 class="estudante-nome"> luna lovegood</h3>
+                <img class="estudante-casa" src="./assets/Imagens//logo-griforina.png alt=" grifinória.png"
+                    alt="grifinória">
+
+                <div class="gif-card">
+                    <img class="gif-imagem" src="./assets/Gifs/gif_luna.gif" alt="gif da luna">
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- rodapé da página  -->
+    <footer class="rodape">
+        <img class="imagem-rodape" src="./assets/Imagens/alura_logo.png" alt="logo da alura">
+
+        <div>
+            <img src="./assets/Imagens/whatsapp (2).png">
+            alt="imagem do zap zap">
+            <p class="rodape-texto">
+                fale conosco (11)97766-0111
+
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const estudantes = document.querySelectorall('.estudante-container');
+
+            /*para cada estudante, configura os eventes de mouse */
+            estudantes.forEach(estudante => {
+                const imagem = estudante.queryselector('.imagem-estudante');
+                const gifCard = estudante.queryselector('.gif-card');
+                const gifImagem = estudante.queryselector('.gif-imagem');
+            });
+            /* quando o mouse entra na imagem do estudante */
+            imagem.addEventListener('mouseenter', () => {
+                const gifSrc = Imagem.getatrribute('data-gif');
+                gifImagem.src = `./asserts/Gifs/${gifSrc}`;
+                gifCard.style.display = 'none';
+            });
+            /* quando o mouse sai da imagem do estudante */
+
+            imagem.addEventListener('mouseleave'; () => {
+                giFCard.style.display = 'none';
+            });
+          });
+
+          
+
+
+
+
+    </script>
+
 </body>
 
 </html>
